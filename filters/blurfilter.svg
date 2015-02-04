@@ -1,0 +1,22 @@
+ <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="wherearemyglasses" x="0" y="0">
+    	<feDiffuseLighting in="SourceGraphic" result="light" lighting-color="#AAB1C6">
+      <fePointLight x="-50" y="5" z="30" limitingConeAngle="60"
+                   pointsAtX="390" pointsAtY="100" pointsAtZ="0"/>
+    </feDiffuseLighting>
+
+    <feComposite in="SourceGraphic" in2="light"
+                 operator="arithmetic" k1="1" k2="0.1" k3="0.5" k4="0"/>
+    </filter>
+  </defs>
+</svg>
+
+
+<!-- 
+
+CPU killer right here:
+<feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+
+
+ -->

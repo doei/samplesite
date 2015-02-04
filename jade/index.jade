@@ -1,0 +1,70 @@
+doctype html
+
+html
+	head
+		title TITLE
+		meta(charset="utf-8")
+		link(rel="stylesheet" type="text/css" href="css/style.css")
+		link(href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css')
+	body
+		div(class='navwrapper')
+			nav
+				ul
+					li 
+						a(id="there") Lorem
+					li 
+						a(id="orthere") Dolor
+					li 
+						a(id="somewhere") Sed
+					li 
+						a(id="about") About
+					li(class='debug')
+						<label><input type="checkbox"> << </label>
+	
+
+		div(class='wrapper')
+			a(class="anchor" id="there")
+			include ../filters/blurfilter.svg
+			
+			section(class='there group')
+				div(class='layer base') 
+				div(class='title front') 
+					h1 Lorem Ipsum
+			
+			
+			section(class='orthere group')
+				a(class="anchor" id="orthere")
+				div(class='layer back') 
+				div(class='title front') 
+					h1 Dolor Sit Amet
+			
+			
+			section(class='somewhere group')
+				a(class='anchor' id='somewhere')
+				div(class='layer base')
+				//- div(class='layer front') 
+				div(class='title front') 
+					h1 Sed Do Eiusmod Tempor 
+				img(class='front' src='img/street-photography-black-and-white.jpg')
+				//-div(class="box front")
+				
+			
+			
+			section(class='about group')
+				a(class="anchor" id="about")
+				div(class='layer base')
+				div(class='title front')
+					p About :
+					p.
+						Sample site.
+
+
+
+		
+
+
+		
+
+
+		script(type='text/javascript' src='js/main.js')
