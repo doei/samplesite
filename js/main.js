@@ -71,18 +71,3 @@ function scrollz () {
 		requestId = window.requestAnimationFrame(scrollz);
 	}
 };
-
-
-
-
-/////////////DEBUG
-	// console.log('TARGET NAME :' + links[i].id);
-	// console.log('SCROLLED :' + scrolled);
-	// console.log('targetposition :' + targetposition);
-	// console.log('PXPERFRAME :' + pxperframe);
-	// console.log('PXPERFRAME/2 :' + pxperframe);
-	// console.log('POSITION:' + wrapper.scrollTop);
-	// 	console.log('>>>>>>STOPPED<<<<<<')
-
-
-
